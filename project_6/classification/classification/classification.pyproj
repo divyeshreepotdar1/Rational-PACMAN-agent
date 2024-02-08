@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7fef5510-151f-4cd1-a275-53f096ea6883}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>dataClassifier.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <CommandLineArguments>-d digits -c naiveBayes -f -a -t 1000  </CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="answers.py" />
+    <Compile Include="autograder.py" />
+    <Compile Include="classificationAgents.py" />
+    <Compile Include="classificationMethod.py" />
+    <Compile Include="classificationTestClasses.py" />
+    <Compile Include="dataClassifier.py" />
+    <Compile Include="game.py" />
+    <Compile Include="ghostAgents.py" />
+    <Compile Include="grading.py" />
+    <Compile Include="graphicsDisplay.py" />
+    <Compile Include="graphicsUtils.py" />
+    <Compile Include="keyboardAgents.py" />
+    <Compile Include="layout.py" />
+    <Compile Include="mira.py" />
+    <Compile Include="mostFrequent.py" />
+    <Compile Include="naiveBayes.py" />
+    <Compile Include="pacman.py" />
+    <Compile Include="pacmanAgents.py" />
+    <Compile Include="perceptron.py" />
+    <Compile Include="perceptron_pacman.py" />
+    <Compile Include="projectParams.py" />
+    <Compile Include="samples.py" />
+    <Compile Include="submission_autograder.py" />
+    <Compile Include="testClasses.py" />
+    <Compile Include="testParser.py" />
+    <Compile Include="textDisplay.py" />
+    <Compile Include="util.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\2002_08_07_img_1578.0.jpg" />
+    <Content Include="images\2002_09_05_img_12098.0.jpg" />
+    <Content Include="images\2002_09_26_img_513.1.jpg" />
+    <Content Include="images\2002_10_17_img_647.0.jpg" />
+    <Content Include="images\2002_10_30_img_478.0.jpg" />
+    <Content Include="images\2002_10_31_img_507.0.jpg" />
+    <Content Include="images\2003_02_13_img_642.0.jpg" />
+    <Content Include="images\2003_05_15_img_1197.0.jpg" />
+    <Content Include="images\2003_07_04_img_502.0.jpg" />
+    <Content Include="images\2003_07_12_img_589.0.jpg" />
+    <Content Include="images\i1.jpg" />
+    <Content Include="images\i2.jpg" />
+    <Content Include="images\i3.jpg" />
+    <Content Include="images\i4.jpg" />
+    <Content Include="images\i5.jpg" />
+    <Content Include="images\i6.jpg" />
+    <Content Include="images\i7.jpg" />
+    <Content Include="images\i8.jpg" />
+    <Content Include="images\i9.jpg" />
+    <Content Include="images\image_0056.jpg" />
+    <Content Include="images\image_0067.jpg" />
+    <Content Include="images\image_0128.jpg" />
+    <Content Include="images\image_0193.jpg" />
+    <Content Include="images\image_0196.jpg" />
+    <Content Include="images\image_0332.jpg" />
+    <Content Include="images\img2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="images" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

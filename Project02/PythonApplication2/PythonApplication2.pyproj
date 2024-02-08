@@ -1,0 +1,76 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>07dbf630-8af2-44ed-8683-f9123fde4ef6</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>Pacman.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonApplication2</Name>
+    <RootNamespace>PythonApplication2</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>-p MinimaxAgent -l minimaxClassic -a depth=4</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <SuppressConfigureTestFrameworkPrompt>true</SuppressConfigureTestFrameworkPrompt>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="autograder - Copy.py" />
+    <Compile Include="autograder.py" />
+    <Compile Include="game - Copy.py" />
+    <Compile Include="game.py" />
+    <Compile Include="ghostAgents - Copy.py" />
+    <Compile Include="ghostAgents.py" />
+    <Compile Include="grading - Copy.py" />
+    <Compile Include="grading.py" />
+    <Compile Include="graphicsDisplay - Copy.py" />
+    <Compile Include="graphicsDisplay.py" />
+    <Compile Include="graphicsUtils - Copy.py" />
+    <Compile Include="graphicsUtils.py" />
+    <Compile Include="keyboardAgents - Copy.py" />
+    <Compile Include="keyboardAgents.py" />
+    <Compile Include="layout - Copy.py" />
+    <Compile Include="layout.py" />
+    <Compile Include="multiAgents - Copy.py" />
+    <Compile Include="multiAgents.py" />
+    <Compile Include="multiagentTestClasses - Copy.py" />
+    <Compile Include="multiagentTestClasses.py" />
+    <Compile Include="pacman - Copy.py" />
+    <Compile Include="pacman.py" />
+    <Compile Include="pacmanAgents - Copy.py" />
+    <Compile Include="pacmanAgents.py" />
+    <Compile Include="projectParams - Copy.py" />
+    <Compile Include="projectParams.py" />
+    <Compile Include="PythonApplication2.py" />
+    <Compile Include="submission_autograder - Copy.py" />
+    <Compile Include="submission_autograder.py" />
+    <Compile Include="testClasses - Copy.py" />
+    <Compile Include="testClasses.py" />
+    <Compile Include="testParser - Copy.py" />
+    <Compile Include="testParser.py" />
+    <Compile Include="textDisplay - Copy.py" />
+    <Compile Include="textDisplay.py" />
+    <Compile Include="util - Copy.py" />
+    <Compile Include="util.py" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
